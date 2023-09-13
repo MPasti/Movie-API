@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="elements">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="Informe o Cep" />
+        </div>
+        <div class="elements">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" readonly />
+        </div>
+        <div class="elements">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" readonly />
+        </div>
+        <div class="elements">
+          <label for="bairro">bairro</label>
+          <input type="text" id="bairro" readonly />
+        </div>
+        <div class="elements">
+          <label for="localidade">Localidade</label>
+          <input type="text" id="localidade" readonly />
+        </div>
+        <div class="elements">
+          <label for="uf">UF</label>
+          <input type="text" id="uf" readonly />
+        </div>
+        <div class="elements">
+          <button type="button" onclick="buscarCep()">Buscar CEP</button>
+        </div>
+      </div>
+      <div class="poster">
+        <p>Poster</p>
+        <img src="" alt="" />
+      </div>
+    </form>
+  </body>
+</html>
