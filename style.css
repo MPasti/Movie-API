@@ -5,24 +5,59 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-form {
-  display: flex;
+body {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('https://wallpapercave.com/dwp1x/wp1945898.jpg');
+
+  background-blend-mode: overlay;
 }
 
-.container {
-  margin: 6% 0 0 25%;
+form {
+  padding: 10px;
+  margin: 100px 200px;
+  display: flex;
+  background-color: #ffffffde;
+  border-color: #000;
+  border-radius: 20px;
+  display: grid;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  grid-template-columns: 1fr 1fr;
+}
+form:first-child {
+  padding-left: 8%;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+input {
+  width: 100%;
 }
 
 .poster {
-  margin: 8% 0 0 15%;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  border: solid 1px #555;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .elements {
+  font-weight: 600;
   width: max-content;
   justify-content: center;
   align-items: center;
   display: grid;
   margin: 10px auto 0 auto;
+}
+.elements.input {
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 button {
   font-size: 16px;

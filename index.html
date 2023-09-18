@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-    <script src="index.js"></script>
-  </head>
-  <body>
-    <form>
-      <div class="container">
-        <div class="elements">
-          <label for="filme">Filme</label>
-          <input type="text" id="filme" placeholder="Entre o nome do filme" />
-        </div>
-        <div class="elements">
-          <label for="lancamento">Lançamento</label>
-          <input type="text" id="lancamento" disabled  />
-        </div>
-        <div class="elements">
-          <label for="tempo">Duração</label>
-          <input type="text" id="tempo" disabled  />
-        </div>
-        <div class="elements">
-          <label for="genero">Gênero</label>
-          <input type="text" id="genero" disabled  />
-        </div>
-        <div class="elements">
-          <label for="localidade">Localidade</label>
-          <input type="text" id="localidade" disabled  />
-        </div>
-        <div class="elements">
-          <label for="plot">Sinopse</label>
-          <textarea type="text" id="plot" rows="5" cols="40" disabled></textarea>
-        </div>
-        <div class="elements">
-          <button type="button" onclick="buscaFilme()">Buscar Filme</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <div class="elements">
+        <label for="filme">Filme</label>
+        <input type="text" id="filme" placeholder="Entre o nome do filme" />
       </div>
+      <div class="elements">
+        <label for="lancamento">Lançamento</label>
+        <input type="text" id="lancamento" disabled />
+      </div>
+      <div class="elements">
+        <label for="tempo">Duração</label>
+        <input type="text" id="tempo" disabled />
+      </div>
+      <div class="elements">
+        <label for="genero">Gênero</label>
+        <input type="text" id="genero" disabled />
+      </div>
+      <div class="elements">
+        <label for="metascore">Nota</label>
+        <input type="text" id="metascore" disabled />
+      </div>
+      <div class="elements">
+        <label for="plot">Sinopse</label>
+        <textarea type="text" id="plot" rows="5" cols="40" disabled></textarea>
+      </div>
+      <div class="elements">
+        <button type="button" onclick="buscaFilme()">Buscar Filme</button>
+      </div>
+    </div>
+    <div class="poster-container">
+      <h2 class="title" for="poster">Poster</h2>
       <div class="poster">
-        <p for="poster">Poster</p>
-        <img src="" alt="Poster" id="poster" />
+        <img src="" alt="Poster" id="poster"
+          onerror="this.src ='https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/cindra/imagens/sem.jpg.gif'" />
       </div>
-    </form>
-  </body>
+    </div>
+  </form>
+</body>
+
 </html>
