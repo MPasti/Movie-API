@@ -1,9 +1,9 @@
 // esta função é assíncrona
-let buscarCep = async () => {
+let buscaFilme = async () => {
   // recupera o valor do campo cep
-  let cep = document.getElementById('cep').value;
+  let movie = document.getElementById("filme").value;
   // monta a url de onde está localizado a API
-  let url = `https://viacep.com.br/ws/${cep}/json/`;
+  let url = `https://www.omdbapi.com/?apikey=e572d81f&t=${movie}`;
   // faz a requisição HTTP
   // await é uma função síncrona, pois enquanto a API não responder,
   // o código não continua
@@ -12,12 +12,13 @@ let buscarCep = async () => {
   // transforma a resposta em um objeto JSON, pois chegar em string
   let respostaJSON = await resposta.json(); // a conversão pode demorar
   // preenche os campos do formulário com os dados do JSON
-  document.getElementById('logradouro').value = respostaJSON.logradouro;
-  document.getElementById('complemento').value = respostaJSON.complemento;
-  if (document.getElementById('complemento').value === '') {
-    document.getElementById('complemento').value = 'Não há complemento';
-  }
-  document.getElementById('bairro').value = respostaJSON.bairro;
-  document.getElementById('uf').value = respostaJSON.uf;
-  document.getElementById('localidade').value = respostaJSON.localidade;
+  let posterImg = respostaJSON.Poster;
+  console.log("img", posterImg);
+  document.getElementById("lancamento").value = respostaJSON.Released;
+  document.getElementById("tempo").value = respostaJSON.Runtime;
+
+  document.getElementById("poster").src = respostaJSON.Poster;
+  document.getElementById("plot").value = respostaJSON.Plot;
+  document.getElementById("uf").value = respostaJSON.uf;
+  document.getElementById("localidade").value = respostaJSON.localidade;
 };

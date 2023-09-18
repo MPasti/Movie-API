@@ -11,36 +11,36 @@
     <form>
       <div class="container">
         <div class="elements">
-          <label for="cep">CEP</label>
-          <input type="text" id="cep" placeholder="Informe o Cep" />
+          <label for="filme">Filme</label>
+          <input type="text" id="filme" placeholder="Entre o nome do filme" />
         </div>
         <div class="elements">
-          <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" readonly />
+          <label for="lancamento">Lançamento</label>
+          <input type="text" id="lancamento" disabled  />
         </div>
         <div class="elements">
-          <label for="complemento">Complemento</label>
-          <input type="text" id="complemento" readonly />
+          <label for="tempo">Duração</label>
+          <input type="text" id="tempo" disabled  />
         </div>
         <div class="elements">
-          <label for="bairro">bairro</label>
-          <input type="text" id="bairro" readonly />
+          <label for="genero">Gênero</label>
+          <input type="text" id="genero" disabled  />
         </div>
         <div class="elements">
           <label for="localidade">Localidade</label>
-          <input type="text" id="localidade" readonly />
+          <input type="text" id="localidade" disabled  />
         </div>
         <div class="elements">
-          <label for="uf">UF</label>
-          <input type="text" id="uf" readonly />
+          <label for="plot">Sinopse</label>
+          <textarea type="text" id="plot" rows="5" cols="40" disabled></textarea>
         </div>
         <div class="elements">
-          <button type="button" onclick="buscarCep()">Buscar CEP</button>
+          <button type="button" onclick="buscaFilme()">Buscar Filme</button>
         </div>
       </div>
       <div class="poster">
-        <p>Poster</p>
-        <img src="" alt="" />
+        <p for="poster">Poster</p>
+        <img src="" alt="Poster" id="poster" />
       </div>
     </form>
   </body>
